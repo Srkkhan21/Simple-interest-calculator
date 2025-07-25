@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- font -->
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+</head>
+
+<body>
+    <!-- Image and text -->
+    <nav id="navbar">
+        <div id="head_img">
+            <img src="favicon.png" height="40px" width="40px" alt="image">
+        </div>
+        <span id="heading">Simple Interest Calculator</span>
+    </nav>
+    <div id="main">
+        <div id="main1">
+            <form id="calculator">
+                <div>
+                    <label for="principal">Principal: </label>
+                    <input type="text" id="principal" class="box">
+                </div><br>
+
+                <div>
+                    <label for="time">Time Period: </label>
+                    <input type="text" id="time" class="box">
+                    <select name="timeopt" id="timeselector" class="selectBox">
+                        <option value="year" id="year">Year</option>
+                        <option value="month" id="month">Month</option>
+                        <option value="day" id="day">Day</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="rate">Rate: </label>
+                    <input type="text" id="rate" class="box"><span> %</span><br>
+                </div><br>
+                <div id="submitBox">
+                    <button id="submit">Calculate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="outputMain" class="hidden">
+        <div id="out_values">
+            <div id="static_values">
+                <span id="p_stat">Principal Amount: </span>
+                <span>Total Interest: </span>
+                <span>Total Amount: </span>
+            </div>
+            <div id="dynamic_values">
+                <span id="p_amt">₹</span><br>
+                <span id="t_int">₹</span><br>
+                <span id="t_amt">₹</span>
+            </div>
+        </div>
+        <div id="submit_againDiv">
+            <button id="submit_again">Calculate Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
