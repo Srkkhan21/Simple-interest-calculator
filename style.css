@@ -56,12 +56,6 @@ body {
     }
 }
 
-@media(max-width: 433px) {
-    #main {
-        height: 65%;
-    }
-}
-
 #main1 {
     padding: 5%;
     display: flex;
@@ -260,6 +254,21 @@ body {
     display: inline-block;
 }
 
+@media(max-width: 616px) and (min-width: 571px) {
+    #p_stat {
+        transform: translate(50px);
+    }
+}
+@media(max-width: 616px) and (min-width: 571px) {
+    #p_amt {
+        margin-bottom: 15px;
+    }
+}
+@media(max-width: 616px) and (min-width: 571px) {
+    #t_int {
+        margin-top: 15px;
+    }
+}
 @media(max-width: 410px) and (min-width: 321px) {
     #p_stat {
         transform: translate(25px);
